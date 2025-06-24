@@ -1,0 +1,67 @@
+#ifndef BREAKABLE_MODEL
+#define BREAKABLE_MODEL
+
+
+object breakable_model
+{
+	void init();
+    void updateLoop();
+    float obj_health;
+    vector loot_item_offset;
+    vector loot_item_rotation;
+    string break_effect;
+    string break_sfx;
+    entity loot;
+    string loot_item;
+};
+
+void breakable_model::init()
+{
+    thread updateLoop();
+    loot_item = getKey("def_loot_item");
+    loot_item_offset = getVectorKey("loot_item_offset");
+    loot_item_rotation = getVectorKey("loot_item_rotation");
+    break_effect = getKey("model_break_effect"); 
+    break_sfx = getKey("snd_destroy");
+    if (break_sfx != "")
+    {
+        cacheSoundShader(break_sfx);
+    }
+}
+
+
+void breakable_model::updateLoop()
+{
+    while(1)
+    {
+ 
+    obj_health = getHealth();
+    if  (obj_health <= 0 )
+        {
+            if  (loot_item != "" )
+            {
+                entity loot = sys.spawn(loot_item);
+
+                loot.setAngles(loot_item_rotation);
+                loot.setOrigin(getWorldOrigin() + loot_item_offset);
+            }
+
+            entity particleDeath = sys.spawn("func_emitter");
+            particleDeath.setOrigin(getWorldOrigin());
+            particleDeath.setModel(break_effect);
+            particleDeath.setShaderParm( SHADERPARM_TIMEOFFSET, -sys.getTime() );
+            particleDeath.show();
+
+            if (break_sfx != "")
+            {
+                startSoundShader(break_sfx, SND_CHANNEL_ANY);
+            }
+
+            return;
+        } 
+        sys.waitFrame();
+    }
+
+}
+
+#endif

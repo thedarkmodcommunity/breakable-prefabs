@@ -1,0 +1,227 @@
+
+//++++++++++++++++++++++++ Breakable Objects++++++++++++++++++++++++++++++
+
+
+entityDef wooden_flinder_top
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"atdm:moveable_small_base"
+	"model"								"models/darkmod/junk/plank_scrap01_med.lwo"
+	"mass"								"7"
+	"bouncyness"            			"0.3"
+	"solid"                 			"0"
+	"spr_object_hardness"				"hard"
+	"spr_object_size"					"small"
+	"frobable"              			"1"
+	"def_damage"						"damage_none"
+
+	"friction"							"0.2"
+	"snd_bounce"						"tdm_impact_junk_plank_shorter"
+}
+
+entityDef wooden_flinder_top2
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"wooden_flinder_top"
+	"model"								"models/darkmod/junk/plank_scrap01_small.lwo"
+}
+
+entityDef wooden_flinder_bottom
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"wooden_flinder_top"
+	"model"								"models/darkmod/junk/plank_scrap01_med.lwo"
+}
+
+entityDef wooden_flinder_n
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"wooden_flinder_top"
+	"model"								"models/darkmod/junk/plank_scrap01_small.lwo"
+}
+
+entityDef wooden_flinder_s
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"wooden_flinder_top"
+	"model"								"models/darkmod/junk/plank_scrap01_med.lwo"
+}
+entityDef wooden_flinder_e
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"wooden_flinder_top"
+	"model"								"models/darkmod/junk/plank_scrap01_small.lwo"
+}
+entityDef wooden_flinder_w
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"wooden_flinder_top"
+	"model"								"models/darkmod/junk/plank_scrap01_med.lwo"
+}
+
+entityDef ceramic_flinder_top
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"atdm:moveable_small_base"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind04.ase"
+	"mass"								"4"
+	"bouncyness"            			"0.4"
+	"solid"                 			"0"
+	"spr_object_hardness"				"hard"
+	"spr_object_size"					"small"
+	"frobable"              			"1"
+	"def_damage"						"damage_none"
+
+	"friction"							"0.2"
+	"snd_bounce"						"tdm_impact_claycup_01"
+}
+
+entityDef ceramic_flinder_top2
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"ceramic_flinder_top"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind02.ase"
+}
+
+entityDef ceramic_flinder_bottom
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"ceramic_flinder_top"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind01.ase"
+}
+
+entityDef ceramic_flinder_n
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"ceramic_flinder_top"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind03.ase"
+}
+
+entityDef ceramic_flinder_s
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"ceramic_flinder_top"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind02.ase"
+}
+entityDef ceramic_flinder_e
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"ceramic_flinder_top"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind04.ase"
+}
+entityDef ceramic_flinder_w
+
+{
+	"editor_displayFolder"	     		"moveables/breakables/flinder"
+	"inherit"							"ceramic_flinder_top"
+	"model"								"models/darkmod/junk/generic_shards/ceramicflind03.ase"
+}
+
+
+entityDef breakable_wooden
+{
+	"inherit"  							"atdm:moveable_kitchen_breakable_base"
+	"spawnclass"						"idBarrel"
+	"editor_displayFolder"	     		"moveables/breakables"
+	"editor_vector loot_item_rotation"	"Defines the angle an item should spawn at. NOTE: Use '90 0 0' for arrow ammo."
+	"editor_vector loot_item_offset"	"XYZ Offset for spawning the loot from the crates origin."
+	"mass"								"18"
+	"health"							"5"
+	"is_mantleable"                      "1"
+
+	"def_loot_item"						""
+	"model_break_effect"				"sparks.prt"
+	"loot_item_offset"					"0 0 0"
+	"loot_item_rotation"				"0 0 0"
+	"editor_var loot_item "             "Item to spawn"
+	
+	"model"								"models/darkmod/containers/crate01.lwo"
+
+	"scriptobject"						"breakable_model"
+
+	"def_flinder"						"wooden_flinder_top"
+	"def_flinder1"						"wooden_flinder_top2"
+	"def_flinder2"						"wooden_flinder_bottom"
+	"def_flinder3"						"wooden_flinder_n"
+	"def_flinder4"						"wooden_flinder_s"
+	"def_flinder5"						"wooden_flinder_e"
+	"def_flinder6"						"wooden_flinder_w"
+
+	 "flinder_offset"					"0 0 20"
+	"flinder_offset1"					"0 -15 20"
+	 "flinder_offset2"					"0 0 0"
+	 "flinder_offset3"					"0 15 1" 
+	 "flinder_offset4"					"0 -15 1"
+	 "flinder_offset5"					"15 0 1"
+	 "flinder_offset6"					"-15 0 1"
+
+	"def_damage"						"damage_none"
+
+	"snd_bounce"			"tdm_impact_wood_med"
+	"snd_bounce_wood"       "tdm_impact_wood_med"
+	"snd_bounce_carpet"		"tdm_impact_carpet_heavy"
+    "snd_bounce_grass"		"tdm_impact_carpet_heavy"
+    "snd_water"             "water_hit_by_large_object"
+    "snd_destroy"			"material_wood_destroyed"
+}
+
+entityDef breakable_ceramic
+{
+	"inherit"  							"atdm:moveable_kitchen_breakable_base"
+	"spawnclass"						"idBarrel"
+	"editor_displayFolder"	     		"moveables/breakables"
+	"editor_vector loot_item_rotation"	"Defines the angle an item should spawn at. NOTE: Use '90 0 0' for arrow ammo."
+	"editor_vector loot_item_offset"	"XYZ Offset for spawning the loot from the crates origin."
+	"mass"								"20"
+	"health"							"15"
+	"is_mantleable"                      "1"
+
+	"def_loot_item"						""
+	"model_break_effect"				"sparks.prt"
+	"loot_item_offset"					"0 0 0"
+	"loot_item_rotation"				"0 0 0"
+	"editor_var loot_item "             "Item to spawn"
+	
+	"model"								"models/darkmod/decorative/vases/jug_clay.lwo"
+	"skin"								"ceramic_jug01"
+
+	"scriptobject"						"breakable_model"
+
+	"def_flinder"						"ceramic_flinder_top"
+	"def_flinder1"						"ceramic_flinder_top2"
+	"def_flinder2"						"ceramic_flinder_bottom"
+	"def_flinder3"						"ceramic_flinder_n"
+	"def_flinder4"						"ceramic_flinder_s"
+	"def_flinder5"						"ceramic_flinder_e"
+	"def_flinder6"						"ceramic_flinder_w"
+
+	 "flinder_offset"					"0 0 20"
+	"flinder_offset1"					"0 -15 20"
+	 "flinder_offset2"					"0 0 0"
+	 "flinder_offset3"					"0 15 1" 
+	 "flinder_offset4"					"0 -15 1"
+	 "flinder_offset5"					"15 0 1"
+	 "flinder_offset6"					"-15 0 1"
+
+	"def_damage"						"damage_none"
+
+	"snd_bounce"			"tdm_impact_large_ceramic"
+	"snd_bounce_wood"       "tdm_impact_large_ceramic"
+	"snd_bounce_carpet"		"tdm_impact_largeclaypot_01"
+    "snd_bounce_grass"		"tdm_impact_largeclaypot_01"
+    "snd_water"             "water_hit_by_large_object"
+    "snd_destroy"			"material_glass_destroyed"
+}

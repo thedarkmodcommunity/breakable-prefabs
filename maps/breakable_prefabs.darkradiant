@@ -1,0 +1,181 @@
+DarkRadiant Map Information File Version 2
+{
+	SelectionSets
+	{
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 10939 }
+	}
+	MapProperties
+	{
+		KeyValue { "EditTimeInSeconds" "10939" } 
+		KeyValue { "LastCameraAngle" "6.9 99 0" } 
+		KeyValue { "LastCameraPosition" "283.415 -57.93 59.2874" } 
+		KeyValue { "LastShaderClipboardMaterial" "textures/common/collision" } 
+	}
+	SelectionGroups
+	{
+		SelectionGroup 52 { "" }
+		SelectionGroup 60 { "" }
+		SelectionGroup 61 { "" }
+		SelectionGroup 62 { "" }
+		SelectionGroup 63 { "" }
+		SelectionGroup 64 { "" }
+		SelectionGroup 65 { "" }
+	}
+	SelectionGroupNodeMapping
+	{
+		Node { ( 67 ) ( 52 ) } // entity (func_static_700)
+		Node { ( 68 ) ( 52 ) } // entity (func_remove_1)
+		Node { ( 69 ) ( 52 ) } // entity (func_emitter_1)
+		Node { ( 70 ) ( 52 ) } // entity (speaker_6)
+		Node { ( 71 ) ( 60 ) } // entity (func_static_1)
+		Node { ( 72 ) ( 60 ) } // entity (func_remove_2)
+		Node { ( 73 ) ( 60 ) } // entity (func_emitter_2)
+		Node { ( 74 ) ( 60 ) } // entity (speaker_1)
+		Node { ( 75 ) ( 61 ) } // entity (func_static_2)
+		Node { ( 76 ) ( 61 ) } // entity (func_remove_3)
+		Node { ( 77 ) ( 61 ) } // entity (func_emitter_3)
+		Node { ( 78 ) ( 61 ) } // entity (speaker_2)
+		Node { ( 79 ) ( 62 ) } // entity (func_static_3)
+		Node { ( 80 ) ( 62 ) } // entity (func_remove_4)
+		Node { ( 81 ) ( 62 ) } // entity (func_emitter_4)
+		Node { ( 82 ) ( 62 ) } // entity (speaker_3)
+		Node { ( 83 ) ( 63 ) } // entity (func_static_4)
+		Node { ( 84 ) ( 63 ) } // entity (func_remove_5)
+		Node { ( 85 ) ( 63 ) } // entity (func_emitter_5)
+		Node { ( 86 ) ( 63 ) } // entity (speaker_4)
+		Node { ( 87 ) ( 64 ) } // entity (func_static_5)
+		Node { ( 88 ) ( 64 ) } // entity (func_remove_6)
+		Node { ( 89 ) ( 64 ) } // entity (func_emitter_6)
+		Node { ( 90 ) ( 64 ) } // entity (speaker_5)
+		Node { ( 91 ) ( 65 ) } // entity (func_static_6)
+		Node { ( 92 ) ( 65 ) } // entity (func_remove_7)
+		Node { ( 93 ) ( 65 ) } // entity (func_emitter_7)
+		Node { ( 94 ) ( 65 ) } // entity (speaker_7)
+	}
+	Layers
+	{
+		Layer 0 { Default }
+	}
+	LayerProperties
+	{
+		ActiveLayer { 0 }
+		HiddenLayers {  }
+	}
+	LayerHierarchy
+	{
+		Layer 0 Parent { -1 }
+	}
+	NodeToLayerMapping
+	{
+		Node { 0 } // entity (world)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (info_player_start_1)
+		Node { 0 } // entity (ambient_world)
+		Node { 0 } // entity (atdm_weapon_shortsword_1)
+		Node { 0 } // entity (atdm_ammo_broadhead_1)
+		Node { 0 } // entity (atdm_ammo_broadhead_2)
+		Node { 0 } // entity (atdm_ammo_broadhead_3)
+		Node { 0 } // entity (atdm_ammo_broadhead_4)
+		Node { 0 } // entity (atdm_ammo_broadhead_5)
+		Node { 0 } // entity (atdm_ammo_broadhead_6)
+		Node { 0 } // entity (atdm_ammo_firearrow_1)
+		Node { 0 } // entity (atdm_ammo_firearrow_2)
+		Node { 0 } // entity (atdm_ammo_firearrow_3)
+		Node { 0 } // entity (atdm_ammo_firearrow_4)
+		Node { 0 } // entity (atdm_ammo_firearrow_5)
+		Node { 0 } // entity (atdm_ammo_firearrow_6)
+		Node { 0 } // entity (atdm_ammo_broadhead_8)
+		Node { 0 } // entity (atdm_ammo_broadhead_7)
+		Node { 0 } // entity (atdm_ammo_broadhead_9)
+		Node { 0 } // entity (atdm_ammo_broadhead_11)
+		Node { 0 } // entity (atdm_ammo_broadhead_10)
+		Node { 0 } // entity (atdm_ammo_broadhead_12)
+		Node { 0 } // entity (atdm_ammo_broadhead_13)
+		Node { 0 } // entity (atdm_ammo_broadhead_15)
+		Node { 0 } // entity (atdm_ammo_broadhead_16)
+		Node { 0 } // entity (atdm_ammo_broadhead_17)
+		Node { 0 } // entity (atdm_ammo_broadhead_18)
+		Node { 0 } // entity (atdm_ammo_broadhead_14)
+		Node { 0 } // entity (breakable_wooden_1)
+		Node { 0 } // entity (atdm_chandelier_3_candles_1)
+		Node { 0 } // entity (breakable_wooden_2)
+		Node { 0 } // entity (atdm_chandelier_3_candles_2)
+		Node { 0 } // entity (atdm_chandelier_3_candles_3)
+		Node { 0 } // entity (breakable_wooden_3)
+		Node { 0 } // entity (breakable_wooden_4)
+		Node { 0 } // entity (breakable_wooden_5)
+		Node { 0 } // entity (breakable_wooden_6)
+		Node { 0 } // entity (breakable_wooden_7)
+		Node { 0 } // entity (atdm_ammo_firearrow_10)
+		Node { 0 } // entity (atdm_ammo_firearrow_9)
+		Node { 0 } // entity (atdm_ammo_firearrow_7)
+		Node { 0 } // entity (atdm_ammo_firearrow_8)
+		Node { 0 } // entity (atdm_ammo_firearrow_12)
+		Node { 0 } // entity (atdm_ammo_firearrow_11)
+		Node { 0 } // entity (atdm_ammo_firearrow_14)
+		Node { 0 } // entity (atdm_ammo_firearrow_15)
+		Node { 0 } // entity (atdm_ammo_firearrow_16)
+		Node { 0 } // entity (atdm_ammo_firearrow_17)
+		Node { 0 } // entity (atdm_ammo_firearrow_18)
+		Node { 0 } // entity (atdm_ammo_firearrow_13)
+		Node { 0 } // entity (atdm_ammo_firearrow_23)
+		Node { 0 } // entity (atdm_ammo_firearrow_24)
+		Node { 0 } // entity (atdm_ammo_firearrow_19)
+		Node { 0 } // entity (atdm_ammo_firearrow_22)
+		Node { 0 } // entity (atdm_ammo_firearrow_21)
+		Node { 0 } // entity (atdm_ammo_firearrow_20)
+		Node { 0 } // entity (breakable_wooden_8)
+		Node { 0 } // entity (breakable_wooden_9)
+		Node { 0 } // entity (breakable_wooden_10)
+		Node { 0 } // entity (breakable_wooden_11)
+		Node { 0 } // entity (breakable_wooden_12)
+		Node { 0 } // entity (breakable_ceramic_1)
+		Node { 0 } // entity (breakable_ceramic_2)
+		Node { 0 } // entity (breakable_ceramic_3)
+		Node { 0 } // entity (breakable_ceramic_4)
+		Node { 0 } // entity (breakable_ceramic_5)
+		Node { 0 } // entity (breakable_ceramic_6)
+		Node { 0 } // entity (func_static_700)
+		Node { 0 } // entity (func_remove_1)
+		Node { 0 } // entity (func_emitter_1)
+		Node { 0 } // entity (speaker_6)
+		Node { 0 } // entity (func_static_1)
+		Node { 0 } // entity (func_remove_2)
+		Node { 0 } // entity (func_emitter_2)
+		Node { 0 } // entity (speaker_1)
+		Node { 0 } // entity (func_static_2)
+		Node { 0 } // entity (func_remove_3)
+		Node { 0 } // entity (func_emitter_3)
+		Node { 0 } // entity (speaker_2)
+		Node { 0 } // entity (func_static_3)
+		Node { 0 } // entity (func_remove_4)
+		Node { 0 } // entity (func_emitter_4)
+		Node { 0 } // entity (speaker_3)
+		Node { 0 } // entity (func_static_4)
+		Node { 0 } // entity (func_remove_5)
+		Node { 0 } // entity (func_emitter_5)
+		Node { 0 } // entity (speaker_4)
+		Node { 0 } // entity (func_static_5)
+		Node { 0 } // entity (func_remove_6)
+		Node { 0 } // entity (func_emitter_6)
+		Node { 0 } // entity (speaker_5)
+		Node { 0 } // entity (func_static_6)
+		Node { 0 } // entity (func_remove_7)
+		Node { 0 } // entity (func_emitter_7)
+		Node { 0 } // entity (speaker_7)
+	}
+}
