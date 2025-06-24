@@ -4,3 +4,5 @@ This test map should contain all of the code, prefabs, and collision models nece
 All of the assets herein are built on top of models/textures/particle effects/sound effects that ship with The Dark Mod 2.13.
 
 Feel free to copy/modify/reshare/include in your own FMs, no attribution required.
+
+Credit to Kingsal for scripting help.
